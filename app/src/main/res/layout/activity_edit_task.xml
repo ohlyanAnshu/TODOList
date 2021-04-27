@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".editTask"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/titlePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="28dp"
+            android:text="Edit Task Details"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:textSize="26sp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-40dp"
+        android:orientation="vertical"
+        android:background="@drawable/bgitems"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+
+            <EditText
+                android:id="@+id/titledesc"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="title of the task"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+
+
+            <EditText
+                android:id="@+id/desc"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="description of the task"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/selectDate"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="When to finish?"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/selectTime"
+                android:inputType="text"
+                android:background="@drawable/bginputtask"
+                android:paddingLeft="12dp"
+                android:textSize="18sp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="When to finish?"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingTop="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSaveUpdate"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtncreate"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Delete"
+        android:textColor="#AFAFAF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtncancel"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+</LinearLayout>
